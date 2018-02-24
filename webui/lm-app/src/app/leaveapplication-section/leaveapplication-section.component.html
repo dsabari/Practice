@@ -1,0 +1,42 @@
+
+<h1 align="center">My Leave Details Section</h1>
+<div align="center">
+<form>
+           <table cellpadding="5">
+               <thead>
+            <tr bgcolor=" #5E81DC">
+   		 
+                <th>Leave ID</th>
+                <th>Number of days</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Leave Type ID</th>
+		        <th>Status</th>
+		        <th>Reason</th>
+		        <th>Applied On</th>
+		        <th>Manager Comments</th>
+            </tr>
+            </thead>
+                <tbody class="leavedetails">
+                    <tr *ngFor="let leavedetail of leavedetails">
+		<td>{{leavedetail.leaveId}}</td>
+		<td>{{leavedetail.noOfDays}}</td>
+        <td>{{leavedetail.startDate}}</td>
+		<td>{{leavedetail.endDate}}</td>
+		<td>{{leavedetail.leaveType}}</td>
+		<td>{{leavedetail.leaveStatus}}</td>
+		<td>{{leavedetail.leaveReason}}</td>
+		<td>{{leavedetail.leaveAppliedOn}}</td>
+		<td>{{leavedetail.managerComments}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <br> <br> <br> <br>
+    <div><button type="submit" (click)="applyLeave()">New Application</button>
+
+    </div>
+</form>
+</div>
+
+
+        

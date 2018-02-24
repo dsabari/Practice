@@ -1,0 +1,17 @@
+tbody {
+    background-color: whitesmoke;
+}
+
+thead {
+    color: white;
+}
+
+button {
+    margin-left:750px;
+    background-color: #5E81DC;
+    color: white;
+    padding: 8px 18px;
+    display: inline-block;
+    border: 1px solid #2d6898;
+    border-radius: 5px 5px 3px 3px;
+}

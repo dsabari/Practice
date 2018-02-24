@@ -1,0 +1,35 @@
+<form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Manager ID</th>
+            </tr>
+        </thead>
+        <tbody class="employees">
+            <tr *ngFor="let employee of employees">
+                <td>
+                    <h5>{{employee.empId}}</h5>
+                </td>
+                <td>
+                    <h5>{{employee.empName}}</h5>
+                </td>
+                <td>
+                    <h5>{{employee.empEmail}}</h5>
+                </td>
+                <td>
+                    <h5>{{employee.empPhone}}</h5>
+                </td>
+                <td>
+                    <h5>{{employee.empManagerId}}</h5>
+                </td>
+                <td>
+                    <input value="Login" type="button" (click)=verifyLogin(employee.empId)>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
